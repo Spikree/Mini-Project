@@ -1,109 +1,210 @@
+/* Base styles for all screen sizes */
 body {
-    background-color: yellow;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-  }
-  
+  background-color: yellow;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+  font-size: 32px;
+  margin: 0;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+input[type="text"] {
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 12px;
+  width: 100%;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 12px 20px;
+  transition: background-color 0.2s;
+}
+
+button[type="submit"]:hover {
+  background-color: #0069d9;
+}
+
+#results {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin: 40px 0;
+}
+
+#results > div {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+#results img {
+  border-radius: 8px;
+  margin-bottom: 20px;
+  object-fit: cover;
+  height: auto;
+  width: 100%;
+}
+
+#results h3 {
+  color: #333;
+  font-size: 24px;
+  margin: 0;
+}
+
+#results ul {
+  margin: 0;
+  padding: 0;
+}
+
+#results li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+#results a {
+  background-color: #007bff;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+#results a:hover {
+  background-color: #0069d9;
+}
+
+/* Styles for screens smaller than 768px (mobile) */
+@media (max-width: 767px) {
   h1 {
-    color: #333;
-    font-size: 32px;
-    margin: 0;
-    text-align: center;
+      font-size: 24px;
   }
-  
+
   form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 40px 0;
+      margin: 20px 0;
   }
-  
-  input[type="text"] {
-    background-color: #fff;
-    border: 2px solid #ccc;
-    border-radius: 8px;
-    font-size: 16px;
-    padding: 12px;
-    width: 300px;
-  }
-  .btn {
-    cursor: pointer;
-  }
-  button[type="submit"] {
-    background-color: #007bff;
-    border: none;
-    border-radius: 8px;
-    color: #fff;
-    cursor: pointer;
-    font-size: 16px;
-    padding: 12px 20px;
-    transition: background-color 0.2s;
-  }
-  
-  button[type="submit"]:hover {
-    background-color: #0069d9;
-  }
-  
+
   #results {
-    display: grid;
-    gap: 40px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    margin: 40px 0;
+      grid-template-columns: 1fr;
+      gap: 20px;
   }
-  
-  #results > div {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-  }
-  
+
   #results img {
-    border-radius: 8px;
-    margin-bottom: 20px;
-    object-fit: cover;
-    height: 200px;
-    width: 100%;
+      height: auto;
   }
-  
+
   #results h3 {
-    color: #333;
-    font-size: 24px;
-    margin: 0;
+      font-size: 20px;
   }
-  
-  #results ul {
-    margin: 0;
-    padding: 0;
+
+  input[type="text"] {
+      width: 100%;
   }
-  
-  #results li {
-    list-style: none;
-    margin-bottom: 10px;
+}
+/* Base styles for all screen sizes */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  text-align: center;
+}
+
+.input-section {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.nutrition-results {
+  text-align: center;
+}
+
+#nutrition-info {
+  margin-top: 20px;
+}
+
+/* Adjust styles for screens smaller than 768px (mobile) */
+@media (max-width: 767px) {
+  .container {
+      max-width: 100%;
+      padding: 10px;
   }
-  
-  #results a {
-    background-color: #007bff;
-    border-radius: 8px;
-    color: #fff;
-    font-size: 16px;
-    padding: 12px 20px;
-    text-align: center;
-    text-decoration: none;
-    transition: background-color 0.2s;
+
+  textarea {
+      margin-bottom: 5px;
   }
-  
-  #results a:hover {
-    background-color: #0069d9;
+
+  button {
+      padding: 8px 16px;
   }
+}
