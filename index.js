@@ -31,5 +31,4 @@ function displayRecipes(recipes){
     })
     resultList.innerHTML = html;
 }
-
-// Aparna14.patil@gmail.com
+
